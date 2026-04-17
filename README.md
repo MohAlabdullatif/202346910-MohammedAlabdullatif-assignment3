@@ -198,17 +198,22 @@ AI was used not only for code suggestions but also for planning the upgrade path
 
 This project is intentionally simple to run.
 
-### Option 1: Open Directly
+### Recommended: Use a Local Development Server
+
+This is the best option for grading because it avoids browser restrictions that can sometimes affect `fetch()` requests when a file is opened with the `file://` protocol.
+
+1. Clone or download the repository.
+2. Open the project in Visual Studio Code.
+3. Start a local server using an extension such as Live Server.
+4. Open the provided local URL in the browser.
+
+### Alternative: Open Directly
 
 1. Download or clone the repository.
 2. Open the project folder.
-3. Open `index.html` in a web browser.
+3. Open `index.html` in a modern browser.
 
-### Option 2: Use a Local Development Server
-
-1. Open the project in Visual Studio Code.
-2. Use an extension such as Live Server.
-3. Run the website in the browser through the local server.
+If this method causes the GitHub API section to behave differently, use the local server option above.
 
 ## Git Commands
 
@@ -290,8 +295,21 @@ The project is designed to work in modern browsers such as:
 - Google Chrome
 - Microsoft Edge
 - Mozilla Firefox
+- Safari
 
-The layout is also responsive for mobile and tablet screen sizes.
+The layout is also responsive for mobile and tablet screen sizes. During review, the project was designed and checked with desktop and smaller-screen layouts in mind so the content remains readable across common devices.
+
+## Testing Performed
+
+The project was reviewed manually by checking:
+
+- theme toggle behavior and theme persistence after reload
+- visitor name save and clear behavior using `localStorage`
+- search, filter, and sort working together in the projects section
+- GitHub API loading, success state, and error-state handling
+- contact form validation for empty fields, invalid email, and short messages
+- responsive layout behavior on desktop and mobile-sized screens
+- animation fallback behavior when JavaScript features are limited
 
 ## Possible Future Improvements
 

@@ -321,6 +321,11 @@ function validateContactForm() {
 }
 
 function setupScrollAnimations() {
+    if (!("IntersectionObserver" in window)) {
+        elements.fadeSections.forEach((section) => section.classList.add("visible"));
+        return;
+    }
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {

@@ -45,6 +45,15 @@ a {
     color: inherit;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid rgba(29, 111, 131, 0.35);
+    outline-offset: 3px;
+}
+
 .headerBar,
 .footerBar {
     background-color: rgba(86, 184, 207, 0.92);
@@ -98,6 +107,12 @@ a {
 .mainNav a:hover,
 .footerBar a:hover {
     color: #8f1432;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
 }
 
 #themeToggle,
@@ -404,6 +419,25 @@ textarea {
 .fade-in-section.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    .fade-in-section,
+    .fade-in-section.visible {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 body.dark-mode {

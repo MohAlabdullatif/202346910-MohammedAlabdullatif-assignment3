@@ -242,6 +242,8 @@ The script file is loaded with `defer`, which allows the HTML to load first befo
 
 Images that are not critical at the top of the page use `loading="lazy"`. This means the browser delays loading them until they are closer to the visible screen area.
 
+The image elements also include explicit dimensions so the browser can reserve space earlier and reduce layout shifting during page load.
+
 ### 8.3 Efficient DOM Rendering
 
 Instead of updating each project card or repository card one by one many times, the script builds grouped HTML strings and renders them more efficiently.
@@ -307,6 +309,8 @@ Some basic accessibility-friendly choices were included:
 - alt text for images
 - semantic sectioning with headings
 - readable status text for user feedback
+- visible keyboard focus styles for interactive elements
+- reduced-motion support for users who prefer fewer animations
 
 More accessibility improvements could still be added later, but the current version already improves clarity and usability compared to the earlier assignment.
 
@@ -317,10 +321,13 @@ The project is designed for modern browsers such as:
 - Google Chrome
 - Microsoft Edge
 - Mozilla Firefox
+- Safari
 
 It also adapts to mobile and tablet layouts using responsive CSS rules.
 
 The JavaScript features used in this project, such as `fetch`, `localStorage`, `IntersectionObserver`, and `Intl.DateTimeFormat`, are supported by modern browsers.
+
+For compatibility, the scroll reveal feature also includes a fallback so sections still appear normally if `IntersectionObserver` is unavailable.
 
 ## 13. Testing and Review Notes
 
@@ -335,6 +342,12 @@ The project was reviewed by checking:
 - whether the layout remains readable on smaller screens
 
 Because this is a front-end assignment, the testing process focused on interactive behavior and visible browser results.
+
+Additional review points included:
+
+- checking keyboard focus visibility on links, buttons, and form controls
+- confirming reduced-motion users can still use the site comfortably
+- checking that image loading behavior remains stable during scrolling
 
 ## 14. Future Improvements
 
