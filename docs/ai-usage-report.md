@@ -1,117 +1,181 @@
 # AI Usage Report
 
-## 1. Purpose of AI Usage
+## 1. Purpose of AI Use in This Assignment
 
-AI tools were used as a learning assistant to support the development of this project. The primary goals were to:
+AI tools were used in this assignment as support tools to help me improve the project, not as a replacement for my own learning or work.
 
-* Improve code structure and organization
-* Assist in debugging JavaScript and CSS issues
-* Generate ideas for interactive features
-* Enhance the quality and clarity of documentation
-* Refine written descriptions for professionalism and readability
+The main purpose of using AI was to:
 
-AI was not used to automatically generate the entire project. Instead, it was used as a supportive tool to guide understanding and improve the overall quality of the work.
+- review my previous Assignment 2 portfolio
+- identify which Assignment 3 requirements were missing
+- suggest ways to upgrade the project without rebuilding it from scratch
+- assist with debugging and organizing JavaScript logic
+- help improve the clarity of my written documentation
 
----
+I used AI in a guided way, where I first understood the task, then reviewed the suggestions, then modified them to fit my own project.
 
-## 2. AI Tools Used
+## 2. Tools Used and Use Cases
 
-The following AI tools were used during this assignment:
+### 2.1 ChatGPT
 
-* ChatGPT – for problem-solving, debugging assistance, and explanations
-* Kilo Extension (VS Code) – for inline suggestions and minor code improvements
+ChatGPT was used for:
 
----
+- reviewing the previous portfolio and comparing it to the new assignment rubric
+- suggesting an upgrade plan for Assignment 3
+- helping structure the GitHub API integration
+- improving the logic for filtering, sorting, and validation
+- refining explanations in the README and documentation files
 
-## 3. How AI Was Utilized
+### 2.2 Editor-Based AI Suggestions
 
-### 3.1 Debugging and Error Resolution
+AI suggestions inside the code editor were used for:
 
-AI was used to identify and resolve several technical issues, including:
+- small code completions
+- syntax corrections
+- improving formatting consistency
+- speeding up repetitive edits
 
-* Incorrect placement of the `<script>` tag inside the HTML file
-* DOM loading timing issues affecting JavaScript execution
-* Event listener implementation errors
-* JavaScript file linking problems
+These suggestions were helpful for small tasks, but they still required manual review.
 
-For example, when the theme toggle feature was not functioning correctly, AI helped diagnose that the script was being executed before the DOM was fully loaded. Based on this explanation, the issue was fixed by adjusting script placement and event handling.
+## 3. Specific Ways AI Was Used
 
----
+### 3.1 Project Review and Planning
 
-### 3.2 Feature Implementation Guidance
+Before making changes, AI helped review the existing portfolio project and identify:
 
-AI provided guidance on how to implement key features required for the assignment, including:
+- which features were already strong
+- which Assignment 3 requirements were still missing
+- which parts of the old project could be reused
 
-* Dark/Light theme toggle using CSS class toggling and JavaScript
-* Time-based greeting message using `Date().getHours()`
-* Live project search and filtering using DOM manipulation
-* Form validation with user feedback messages
-* Responsive design improvements using CSS
+This was useful because it made the upgrade process more organized and prevented unnecessary rebuilding.
 
-All features were implemented manually after understanding the logic and structure provided by AI.
+### 3.2 Code Improvement
 
----
+AI was used to support improvements in:
 
-### 3.3 Code Improvement and Refactoring
+- theme state handling
+- visitor preference storage
+- GitHub API data loading
+- form validation logic
+- filtering and sorting structure
+- status messages and user feedback
 
-AI was used to review and improve code quality by:
+These suggestions were not copied blindly. I checked whether the logic matched the website and adjusted it to stay simple and understandable.
 
-* Suggesting cleaner and more readable JavaScript structure
-* Improving variable naming and consistency
-* Recommending better separation of concerns between HTML, CSS, and JavaScript
-* Ensuring the code follows basic best practices
+### 3.3 Debugging Support
 
-All suggestions were reviewed and selectively applied.
+AI helped when reviewing possible issues such as:
 
----
+- how to organize JavaScript into clearer sections
+- how to combine search, filter, and sort in a readable way
+- how to handle API request failure more clearly
+- how to keep the new features connected to the existing HTML structure
+
+This saved time, but the final responsibility for correctness was still mine.
 
 ### 3.4 Documentation Support
 
-All documentation was written by me. AI was used only to improve:
+AI also helped improve documentation quality by:
 
-* Grammar and sentence structure
-* Clarity and readability
-* Professional tone of explanations
+- suggesting clearer structure
+- improving readability
+- making explanations more complete
+- helping align the documents with the grading rubric
 
-AI assisted in refining the README file and technical descriptions, but all content was reviewed, edited, and customized to reflect my own understanding.
+Even here, I still reviewed the wording to make sure the documentation honestly describes my real work.
 
----
+## 4. Benefits of Using AI
 
-## 4. Modifications to AI Output
+Using AI provided several benefits:
 
-Any AI-generated suggestions were not used directly without modification. Changes included:
+- it made it easier to understand how to upgrade an old project into a stronger new submission
+- it helped me break a large assignment into smaller tasks
+- it improved the clarity of some JavaScript logic
+- it helped me write more complete documentation
+- it supported debugging and reduced time spent on small issues
 
-* Adapting code to match the project structure
-* Renaming variables and functions for clarity
-* Simplifying logic where necessary
-* Adjusting styling and UI behavior to fit the design
+One of the biggest benefits was that it gave quick feedback while I was working, which made the development process more efficient.
 
-This ensured the final implementation reflects my own work and understanding.
+## 5. Challenges and Limitations
 
----
+Using AI also had some challenges:
 
-## 5. Learning Outcomes
+- some suggestions were too advanced for what I wanted in a student assignment
+- some suggestions needed simplification to stay consistent with my coding style
+- AI does not automatically understand the full context unless the project is reviewed carefully
+- not every generated idea fits the website design or assignment goals directly
 
-Using AI tools contributed to my learning in the following areas:
+Because of this, AI was helpful, but it was never enough by itself. I still had to judge whether a suggestion was appropriate.
 
-* Understanding DOM manipulation and event handling in JavaScript
-* Implementing dynamic features such as search filtering
-* Using localStorage to persist user preferences
-* Writing cleaner and more maintainable code
-* Improving technical documentation skills
+## 6. Learning Outcomes
 
----
+By using AI during this assignment, I improved my understanding of:
 
-## 6. Academic Integrity Statement
+- how to integrate an external API into a front-end project
+- how to manage browser-side state using `localStorage`
+- how to combine multiple conditions in project filtering and sorting
+- how to validate form data more carefully
+- how to improve performance in simple but practical ways
+- how to organize code and documentation more professionally
 
-All work submitted in this project is my own. AI tools were used only as a support mechanism for learning and improvement. I confirm that:
+This means AI supported both my technical learning and my workflow.
 
-* I understand all the code included in this project
-* I did not copy work from other students or external sources
-* I have clearly documented how AI tools were used
+## 7. Responsible Use and Modifications
 
----
+I used AI responsibly by making sure that I did not submit raw AI output without review.
 
-## 7. Summary
+The responsible steps I followed were:
 
-AI tools were used responsibly to support the development process, improve code quality, and enhance documentation. The final project reflects my own understanding, effort, and implementation.
+- I reviewed suggestions before using them
+- I changed code to fit my own project structure
+- I removed unnecessary complexity
+- I tested features after making changes
+- I rewrote explanations in my own project context
+- I kept the portfolio aligned with the assignment requirements
+
+This is important for academic integrity because using AI responsibly means understanding the work, not just pasting generated code.
+
+## 8. Examples of Modification
+
+Examples of how AI suggestions were modified include:
+
+- simplifying implementation ideas so they stayed realistic for a student project
+- adapting logic to work with my existing portfolio sections
+- rewriting documentation so it reflects what the project actually contains
+- keeping the design simple instead of adding unnecessary tools or libraries
+
+These changes helped ensure the final result reflects my own decision-making.
+
+## 9. Academic Integrity Statement
+
+I confirm that:
+
+- the final submitted project is my own work
+- AI was used only as a support tool
+- I reviewed and modified AI-generated suggestions
+- I understand the code and documentation included in this project
+- I did not use AI to replace my own responsibility for learning or correctness
+
+## 10. Final Reflection
+
+AI was useful in this assignment because it helped me plan, debug, and explain the project more effectively. However, the most important part was still reviewing and adapting the suggestions carefully.
+
+The final submission reflects my own understanding because I reused my earlier project, improved it step by step, and made sure I could explain every major feature. In that sense, AI was a helpful assistant, but the project decisions and final responsibility remained mine.
+
+## 11. AI Rubric Alignment
+
+### Effective Use
+
+AI was used in ways that directly improved the project. It helped review the previous portfolio, identify missing Assignment 3 requirements, support the upgrade plan, improve logic, and strengthen documentation.
+
+### Documentation
+
+This report clearly explains the tools used, their use cases, their benefits, their limitations, and how the final work was checked and modified. This supports transparency in how AI assisted the assignment.
+
+### Understanding
+
+The final project was not submitted as raw AI output. I reviewed, simplified, and adapted the suggestions so they fit my website and stayed understandable. This means the final submission reflects my own understanding of the code and documentation.
+
+### Innovation
+
+AI was used to help convert a previous assignment into a stronger and more advanced new submission instead of simply replacing the project. This made the AI use more thoughtful and practical, especially for planning improvements and refining existing work.
