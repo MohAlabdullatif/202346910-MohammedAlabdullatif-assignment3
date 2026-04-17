@@ -303,10 +303,6 @@ If I continue improving this portfolio later, possible next steps include:
 - publishing the site online and adding a live link
 - adding project details pages in the future
 
-## Optional Deployment Link
-
-If deployed later, the live project link can be added here.
-
 ## Author
 
 Mohammed Alabdullatif
